@@ -21,4 +21,4 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
       - name: Run a one-line script
-        run: ls -la; echo "lol" >> tata; git add *; git commit -m "lol"; git push origin main;
+        run: ls -la; echo "lol" >> tata; git config --global user.email "you@example.com"; git config --global user.name "Your Name"; git add *; git commit -m "lol"; git push origin main;
